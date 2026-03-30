@@ -5,7 +5,7 @@ using UnityEngine;
 public class GrabManager : MonoBehaviour
 {
     public GameObject[] interactables;
-    public List<GameObject> Objeto;
+    public List<GameObject> Object;
 
     public GameObject heldItem;
     void Start()
@@ -15,11 +15,7 @@ public class GrabManager : MonoBehaviour
         {
             if (item.GetComponent<GrabObject>())
             {
-                Objeto.Add(item);
-                if (!item.GetComponent<GrabObject>().type.Equals("Objeto"))
-                {
-                    item.SetActive(false);
-                }
+                Object.Add(item);
             }
         }
     }

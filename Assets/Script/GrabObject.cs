@@ -12,7 +12,7 @@ public class GrabObject : MonoBehaviour
     public AudioClip soundGrab;
     public AudioClip soundPlace;
 
-    [SerializeField] public string type = "Objeto";
+    [SerializeField] public string type = "Object";
     [SerializeField] public GameObject spawner;
 
     private AudioSource player;
